@@ -7,14 +7,7 @@ async function loadComponent(selector, path) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  loadComponent('#top', './components/top.html');
-  loadComponent('#vision', './components/vision.html');
-  loadComponent('#message', './components/message.html');
-  loadComponent('#service', './components/service.html');
-  loadComponent('#story', './components/story.html');
-  loadComponent('#profile', './components/profile.html');
-
+function setupObserver() {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -29,4 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(section => {
     observer.observe(section);
   });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadComponent('#top', './components/top.html');
+  await loadComponent('#vision', './components/vision.html');
+  await loadComponent('#message', './components/message.html');
+  await loadComponent('#service', './components/service.html');
+  await loadComponent('#story', './components/story.html');
+  await loadComponent('#profile', './components/profile.html');
+
+  setupObserver();
 });

@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,35 +9,39 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Body */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:  'Noto Sans JP', Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN',sans-serif;
   line-height: 1.6;
 }
 
-/* Navbar */
+
 .navbar {
   position: sticky;
   top: 0;
-  background: #343a40;
-  padding: 10px;
+  background: #FFFFFF;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content:flex-end;
+  align-items: center;
+  gap: 30px;
   z-index: 1000;
+  padding: 15px;
+  border-bottom: 1px solid #adb5bd ;
 }
 
 .navbar a {
-  color: white;
+  color: rgb(19, 18, 18);
   text-decoration: none;
-  font-weight: bold;
+  font-weight:300;
+  font-size: 14px;
+  text-transform: uppercase;
+  
 }
 
 .navbar a:hover {
   text-decoration: underline;
 }
 
-/* General Section Style */
+
 section {
   opacity: 0;
   transform: translateY(30px);
@@ -52,15 +56,48 @@ section.show {
   transform: translateY(0);
 }
 
-/* Background Colors */
 #top { background: #f8f9fa; }
 #vision { background: #e9ecef; }
 #message { background: #dee2e6; }
 #service { background: #ced4da; }
 #story { background: #adb5bd; }
-#profile { background: #6c757d; color: white; }
+#profile { background: #FFFFFF; }
 
-/* Responsive */
+
+.company-info dl {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.company-info .row {
+  display: flex;
+  gap: 20px;
+  font-size: 17px;
+  
+}
+
+.company-info dt {
+ clear: left;
+  float: left;
+  display: block;
+  width: 30%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  text-align: right;
+  line-height: 1.6em;
+  
+}
+
+.company-info dd {
+  width: 60%;
+  float: left;
+  text-align: left;
+  margin-bottom: 15px;
+  line-height: 1.6em;
+}
+
+
 @media (min-width: 768px) {
   section {
     padding: 100px 50px;
@@ -68,9 +105,45 @@ section.show {
   }
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   section {
     padding: 120px 80px;
     font-size: 1.4rem;
+  }
+  .inner {
+    width: 1024px;
+    padding-bottom: 120px;
+  }
+}
+.company-map-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.company-info, .map-info {
+  flex: 1 1 45%;
+}
+
+.mapFrameInfo {
+  width: 100%;
+  height: 400px; 
+  background-color: #eee; 
+}
+
+@media (max-width: 768px) {
+  .company-map-wrapper {
+    flex-direction: column;
+  }
+
+  .company-info, .map-info {
+    flex: 1 1 100%;
+  }
+
+  .mapFrameInfo {
+    height: 300px; 
   }
 }
