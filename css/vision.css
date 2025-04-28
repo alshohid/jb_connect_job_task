@@ -1,0 +1,13 @@
+.vision_container {
+    text-align: center;
+    width: 100%;
+    background-color: red;
+  }
+.vision {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    font-size: 14px;
+    text-align: justify;
+    font-weight: 300;
+  }
