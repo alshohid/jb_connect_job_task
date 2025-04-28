@@ -16,7 +16,7 @@ body {
 
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   background: transparent;
   padding: 20px;
@@ -24,6 +24,7 @@ body {
   justify-content:flex-end;
   gap: 20px;
   z-index: 1000;
+  width: 100%;
   transition: all 0.3s ease;
 }
 
