@@ -14,41 +14,6 @@ body {
   line-height: 1.6;
 }
 
-
-.navbar {
-  position: fixed;
-  top: 0;
-  background: transparent;
-  padding: 30px;
-  display: flex;
-  justify-content:flex-end;
-  gap: 20px;
-  z-index: 1000;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-
-
-.navbar.scrolled {
-  background: #ffffff; 
-  border-bottom: 1px solid #ccc;
-}
-
-
-.navbar a {
-  color: rgb(19, 18, 18);
-  text-decoration: none;
-  font-weight:300;
-  font-size: 14px;
-  text-transform: uppercase;
-  
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-
 section {
   opacity: 0;
   transform: translateY(30px);
