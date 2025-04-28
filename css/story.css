@@ -59,15 +59,32 @@
   
  
   @media (max-width: 768px) {
+    .content-section {
+      position: relative;
+      z-index: 1;       
+      padding: 1px 0px;
+      color: #fff;   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+          
+    }
     .col2 {
       flex-direction: column;
-      width: 90%;
+      width: 100%;
     }
   
     .col2 li {
       flex: 1 1 100%; 
       width: 100%;
     }
+    .col2 p{
+      text-align: justify;
+    }
+    .inner {
+      width: 100%;
+    }
+    
   }
  
   @media (min-width: 1020px) {
