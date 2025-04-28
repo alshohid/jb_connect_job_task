@@ -19,7 +19,7 @@ body {
   position: fixed;
   top: 0;
   background: transparent;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content:flex-end;
   gap: 20px;
