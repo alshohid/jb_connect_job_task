@@ -35,7 +35,9 @@ section.show {
 #message { background: #dee2e6; }
 #service { background: #ced4da; }
 #profile { background: #FFFFFF; }
-
+.company_profile_container{
+  padding-top: 60px !important;
+}
 
 .company-info dl {
   display: flex;
@@ -73,8 +75,10 @@ section.show {
 
 @media (min-width: 768px) {
   section {
-    /* padding: 100px 50px; */
     font-size: 1.2rem;
+  }
+  .company_profile_container{
+    padding-top: 10px;
   }
 }
 
@@ -84,7 +88,7 @@ section.show {
   .company-map-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0;
     list-style: none;
     width: 80%;
     margin: auto;
