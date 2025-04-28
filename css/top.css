@@ -54,6 +54,41 @@ section {
   
  
   #slogan h1, #slogan h2 {
-    text-shadow: 2px 2px 4px rgba(165, 163, 163, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 1200px) {
+    #slogan h1 {
+      font-size: 36px;
+    }
+    #slogan h2 {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    #slogan h1 {
+      font-size: 32px;
+    }
+    #slogan h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #slogan h1 {
+      font-size: 28px;
+    }
+    #slogan h2 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #slogan h1 {
+      font-size: 24px;
+    }
+    #slogan h2 {
+      font-size: 16px;
+    }
   }
   
