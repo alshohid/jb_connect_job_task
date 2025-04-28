@@ -54,7 +54,7 @@ section {
   transition: all 0.6s ease-out;
   padding: 60px 20px;
   text-align: center;
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100%;
 }
 
@@ -67,7 +67,7 @@ section.show {
 #vision { background: #e9ecef; }
 #message { background: #dee2e6; }
 #service { background: #ced4da; }
-#story { background: #adb5bd; }
+/* #story { background: #CCD7C6 } */
 #profile { background: #FFFFFF; }
 
 
