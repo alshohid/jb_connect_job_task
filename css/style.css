@@ -10,17 +10,20 @@ html {
 }
 
 body {
-  font-family:  'Noto Sans JP', Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN',sans-serif;
+  font-family: 'Noto Sans JP', Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', sans-serif;
   line-height: 1.6;
+  background-color: #fff; 
+  color: #000; 
 }
+
 
 section {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.6s ease-out;
-  padding: 2px 0px;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+  padding: 2px 0; 
   text-align: center;
-  min-height: 90%;
+  min-height: 90%; 
   width: 100%;
 }
 
@@ -29,8 +32,17 @@ section.show {
   transform: translateY(0);
 }
 
-#top { background: #f8f9fa; }
-#vision { background: #FFFFFF; }
-#message { background: #dee2e6; }
-#service { background: #FFFFFF; }
-#profile { background: #FFFFFF; }
+
+#top {
+  background-color: #f8f9fa;  
+}
+
+#vision,
+#service,
+#profile {
+  background-color: #ffffff;  
+}
+
+#message {
+  background-color: #dee2e6;
+}

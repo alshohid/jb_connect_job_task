@@ -31,6 +31,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadComponent('#service', './components/service.html');
   await loadComponent('#story', './components/story.html');
   await loadComponent('#profile', './components/profile.html');
-
+  await loadComponent('#footer','./components/footer.html');
   setupObserver();
 });
