@@ -28,11 +28,11 @@
   }
   
   .grid-item:nth-child(2) {
-    background-color: #F6F6F6; 
+    background-color: #eedfdf; 
   }
   
   .grid-item:nth-child(3) {
-    background-color: #F6F6F6; 
+    background-color: #eedfdf; 
   }
   
   .grid-item img {
@@ -47,6 +47,8 @@
     line-height: 1.7;
     color: #333;
     text-align: left;
+    width: 80%;
+    margin: auto;
   }
   
   @media (max-width: 768px) {
