@@ -24,7 +24,6 @@ section {
   width: 100%;
 }
 
-
 section.show {
   opacity: 1;
   transform: translateY(0);
@@ -35,91 +34,3 @@ section.show {
 #message { background: #dee2e6; }
 #service { background: #FFFFFF; }
 #profile { background: #FFFFFF; }
-.company_profile_container{
-  padding-top: 60px !important;
-}
-
-.company-info dl {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.company-info .row {
-  display: flex;
-  gap: 20px;
-  font-size: 17px;
-  
-}
-
-.company-info dt {
- clear: left;
-  float: left;
-  display: block;
-  width: 30%;
-  margin-right: 10%;
-  margin-bottom: 20px;
-  text-align: right;
-  line-height: 1.6em;
-  
-}
-
-.company-info dd {
-  width: 60%;
-  float: left;
-  text-align: left;
-  margin-bottom: 15px;
-  line-height: 1.6em;
-}
-
-@media (min-width: 768px) {
-  section {
-    font-size: 1.2rem;
-  }
-
-  .company_profile_container {
-    padding-top: 10px;
-  }
-}
-
-@media (min-width: 1020px) {
-  .company-map-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-    list-style: none;
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-.company-info,
-.map-info {
-  flex: 1 1 45%;
-}
-
-.mapFrameInfo {
-  width: 100%;
-  height: 400px;
-  background-color: #eee;
-}
-
-@media (max-width: 768px) {
-  .company-map-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .company-info,
-  .map-info {
-    flex: 1 1 100%;
-    
-  }
-  .map-info{
-    padding: 15px;
-  }
-
-  .mapFrameInfo {
-    height: 200px;
-  }
-}
