@@ -22,9 +22,10 @@
   font-size: 22px;
   font-weight: normal;
   text-align: center;
-  color:rgb(41, 39, 39);
-  font-family: 'Josefin Sans', 'Noto Sans JP',serif;
-
+  color:rgb(41, 39, 39);font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  
   }
   
   .grid-item:nth-child(2) {
@@ -46,7 +47,7 @@
     font-size: 14px;
     line-height: 1.7;
     color: #333;
-    text-align: left;
+    text-align: justify;
     width: 80%;
     margin: auto;
   }
@@ -71,8 +72,10 @@
     .grid-item:nth-child(4) { order: 3; }
   
     .grid-item p {
-      text-align: center;
       padding-top: 10px;
+      text-align: justify;
+      width: 90%;
+      margin: auto;
     }
     .grid-item h2 {
       text-align: center;

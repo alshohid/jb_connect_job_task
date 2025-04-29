@@ -29,9 +29,11 @@
   
   .card h2 {
     font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-    font-family: 'Josefin Sans', 'Noto Sans JP', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color:rgb(41, 39, 39);font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
   }
   
   .card img {
